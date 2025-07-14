@@ -10,15 +10,16 @@ let startValue = 0;
 // incriment
 
 incriment.addEventListener("click", () => {
+    startValue++;
+    Counter.innerHTML = startValue;
     // color change when is equal to 10
-    if (startValue === 9) {
+    if (startValue === 10) {
         Counter.style.color = 'red'
     }
     else {
         Counter.style.color = 'black'
     }
-    startValue++;
-    Counter.innerHTML = startValue;
+
 });
 
 
@@ -30,6 +31,7 @@ Decriment.addEventListener("click", () => {
     else {
         startValue = 0;
     }
+    Counter.innerHTML = startValue;
     // color change when is equal to 10
     if (startValue === 10) {
         Counter.style.color = 'red'
@@ -37,7 +39,7 @@ Decriment.addEventListener("click", () => {
     else {
         Counter.style.color = 'black'
     }
-    Counter.innerHTML = startValue;
+
 });
 
 // Reset
