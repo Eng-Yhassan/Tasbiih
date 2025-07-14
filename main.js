@@ -5,11 +5,15 @@ const Reset=document.querySelector("#Reset");
 
 let startValue=0;
 
+// incriment
+
 incriment.addEventListener("click",()=>{
     startValue ++;
     Counter.innerHTML=startValue;
 });
 
+
+// Decriment
 Decriment.addEventListener("click",()=>{
     if(startValue>=1){
         startValue --
@@ -20,6 +24,7 @@ Decriment.addEventListener("click",()=>{
     Counter.innerHTML=startValue;
 });
 
+// Reset
 Reset.addEventListener("click",()=>{
     startValue=0;
 
